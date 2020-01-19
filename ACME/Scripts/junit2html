@@ -1,0 +1,4 @@
+#!c:\users\rowel\selenium\acme\scripts\python.exe
+
+from junit2htmlreport import runner
+runner.start()

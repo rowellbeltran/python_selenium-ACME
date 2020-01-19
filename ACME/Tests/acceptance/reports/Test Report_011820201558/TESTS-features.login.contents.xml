@@ -1,0 +1,87 @@
+<testsuite errors="0" failures="1" hostname="LAPTOP-07871PLC" name="features.login.contents.Test contents of the login page" skipped="0" tests="7" time="120.040427" timestamp="2020-01-18T15:32:32.006932"><testcase classname="features.login.contents.Test contents of the login page" name="Login page title is displayed" status="passed" time="13.460318"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page title is displayed
+    Given I am on login page ... passed in 13.324s
+    Then There is a title shown on the page ... passed in 0.086s
+    And The title tag contains "Account - Log In" ... passed in 0.050s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays navigation bar" status="passed" time="15.830807"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays navigation bar
+    Given I am on login page ... passed in 15.456s
+    Then The navigation bar header "ACME System 1" is displayed ... passed in 0.094s
+    And The navigation link "Home" is displayed ... passed in 0.172s
+    And The navigation link "Log In" is displayed ... passed in 0.109s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays breadcrumbs" status="passed" time="20.804375"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays breadcrumbs
+    Given I am on login page ... passed in 20.264s
+    Then The breadcrumb "Home" is displayed ... passed in 0.447s
+    And The breadcrumb "Account - Log In" is displayed ... passed in 0.094s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays container header" status="failed" time="16.907541"><failure message="Expected: To continue, please authenticate here1, Actual: To continue, please authenticate here" type="AssertionError">
+<![CDATA[
+Failing step: And Login Page container header tag contains "To continue, please authenticate here1" ... failed in 0.085s
+Location: features/login/contents.feature:22
+Assertion Failed: Expected: To continue, please authenticate here1, Actual: To continue, please authenticate here]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays container header
+    Given I am on login page ... passed in 16.762s
+    Then Login Page displays container header ... passed in 0.060s
+    And Login Page container header tag contains "To continue, please authenticate here1" ... failed in 0.085s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays email and password fields" status="passed" time="17.035033"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays email and password fields
+    Given I am on login page ... passed in 16.488s
+    Then There is a field label "Email:" displayed ... passed in 0.219s
+    And There is a text field "email" displayed ... passed in 0.109s
+    And There is a field label "Password:" displayed ... passed in 0.125s
+    And There is a text field "password" displayed ... passed in 0.094s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays buttons" status="passed" time="15.55779"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays buttons
+    Given I am on login page ... passed in 15.114s
+    Then There is a "Log In" button displayed ... passed in 0.225s
+    And There is a "Forgot Password" button displayed ... passed in 0.109s
+    And There is a "Register" button displayed ... passed in 0.109s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.login.contents.Test contents of the login page" name="Login page displays footer" status="passed" time="20.444563"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login page displays footer
+    Given I am on login page ... passed in 20.220s
+    Then There is a footer shown on the page ... passed in 0.100s
+    And The text displayed is "Copyright © 2020 ACME Systems" ... passed in 0.125s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

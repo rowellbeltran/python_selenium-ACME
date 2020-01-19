@@ -1,0 +1,23 @@
+<testsuite errors="0" failures="0" hostname="LAPTOP-07871PLC" name="features.main.navigation.Test navigation from Main Page" skipped="0" tests="2" time="41.313417" timestamp="2020-01-18T15:22:53.208922"><testcase classname="features.main.navigation.Test navigation from Main Page" name="User can logout from the Main Page" status="passed" time="16.499627"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User can logout from the Main Page
+    Given I am on the Main Page ... passed in 14.943s
+    When I click "Log Out" link from navigation bar ... passed in 1.535s
+    Then I am on the login page ... passed in 0.022s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.navigation.Test navigation from Main Page" name="User can navigate to Work Items from the Main Page" status="passed" time="24.81379"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User can navigate to Work Items from the Main Page
+    Given I am on the Main Page ... passed in 18.016s
+    When I click "Work Items" button ... passed in 6.762s
+    Then I am on the workitems page ... passed in 0.035s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

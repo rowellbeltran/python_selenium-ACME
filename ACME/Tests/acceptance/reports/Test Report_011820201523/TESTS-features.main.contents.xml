@@ -1,0 +1,188 @@
+<testsuite errors="0" failures="1" hostname="LAPTOP-07871PLC" name="features.main.contents.Test Contents of the Main Page" skipped="0" tests="12" time="259.184186" timestamp="2020-01-18T15:22:11.803406"><testcase classname="features.main.contents.Test Contents of the Main Page" name="ACME Main Page displays page title" status="passed" time="15.900455"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: ACME Main Page displays page title
+    Given I am on the Main Page ... passed in 15.804s
+    Then There is a title shown on the page ... passed in 0.059s
+    And The title tag contains "Dashboard" ... passed in 0.037s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Main page displays navigation bar" status="passed" time="17.839434"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Main page displays navigation bar
+    Given I am on the Main Page ... passed in 17.515s
+    Then The navigation bar header "ACME System 1" is displayed ... passed in 0.062s
+    And The navigation link "Home" is displayed ... passed in 0.157s
+    And The navigation link "Log Out" is displayed ... passed in 0.105s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Main page displays breadcrumbs" status="passed" time="18.460812"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Main page displays breadcrumbs
+    Given I am on the Main Page ... passed in 18.243s
+    Then The breadcrumb "Home" is displayed ... passed in 0.131s
+    And The breadcrumb "Dashboard" is displayed ... passed in 0.086s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Main page displays container header and note" status="passed" time="25.532043"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Main page displays container header and note
+    Given I am on the Main Page ... passed in 25.381s
+    Then Main Page displays container header ... passed in 0.026s
+    And Main Page container header tag contains "Welcome, " "valid_email"" to System 1." ... passed in 0.062s
+    And Container note displays "If this is your first time logging in, please make sure to go to User Options -> Reset Test Data" ... passed in 0.063s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Main page displays footer" status="passed" time="16.402208"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Main page displays footer
+    Given I am on the Main Page ... passed in 16.287s
+    Then There is a footer shown on the page ... passed in 0.031s
+    And The text displayed is "Copyright © 2020 ACME Systems" ... passed in 0.084s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Main page displays buttons" status="passed" time="22.581703"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Main page displays buttons
+    Given I am on the Main Page ... passed in 20.461s
+    Then There is a "User options" button displayed ... passed in 0.394s
+    And There is a "Work Items" button displayed ... passed in 0.243s
+    And There is a "Accounts" button displayed ... passed in 0.299s
+    And There is a "Checks" button displayed ... passed in 0.267s
+    And There is a "Vendors" button displayed ... passed in 0.234s
+    And There is a "Invoices" button displayed ... passed in 0.250s
+    And There is a "Internal Invoices" button displayed ... passed in 0.231s
+    And There is a "Reports" button displayed ... passed in 0.203s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Accounts is clicked" status="passed" time="21.357566"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Accounts is clicked
+    Given I am on the Main Page ... passed in 19.475s
+    When I click "Accounts" button ... passed in 0.545s
+    Then "Add account modification" is available from the dropdown menu ... passed in 0.881s
+    And "View account history" is available from the dropdown menu ... passed in 0.457s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Checks is clicked" status="failed" time="26.32182"><failure message="FAILED SUB-STEP: When I enter &quot;valid_value&quot; in &quot;email&quot; field&#10;Substep info: Traceback (most recent call last):&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\behave\model.py&quot;, line 1329, in run&#10;    match.run(runner.context)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\behave\matchers.py&quot;, line 98, in run&#10;    self.func(context, *args, **kwargs)&#10;  File &quot;steps\interaction.py&quot;, line 14, in step_impl&#10;    field_element = page.input_field(field_name)&#10;  File &quot;c:\users\rowel\selenium\acme\Tests\acceptance\page\base_page.py&quot;, line 45, in input_field&#10;    return self.driver.find_element(By.NAME, field_name)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 978, in find_element&#10;    'value': value})['value']&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 321, in execute&#10;    self.error_handler.check_response(response)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\errorhandler.py&quot;, line 242, in check_response&#10;    raise exception_class(message, screen, stacktrace)&#10;selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[name=&quot;email&quot;]&quot;}&#10;  (Session info: chrome=79.0.3945.117)&#10;&#10;&#10;Traceback (of failed substep):&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\behave\model.py&quot;, line 1329, in run&#10;    match.run(runner.context)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\behave\matchers.py&quot;, line 98, in run&#10;    self.func(context, *args, **kwargs)&#10;  File &quot;steps\interaction.py&quot;, line 14, in step_impl&#10;    field_element = page.input_field(field_name)&#10;  File &quot;c:\users\rowel\selenium\acme\Tests\acceptance\page\base_page.py&quot;, line 45, in input_field&#10;    return self.driver.find_element(By.NAME, field_name)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 978, in find_element&#10;    'value': value})['value']&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 321, in execute&#10;    self.error_handler.check_response(response)&#10;  File &quot;c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\errorhandler.py&quot;, line 242, in check_response&#10;    raise exception_class(message, screen, stacktrace)&#10;" type="AssertionError">
+<![CDATA[
+Failing step: Given I am on the Main Page ... failed in 26.322s
+Location: features/main/contents.feature:49
+Assertion Failed: FAILED SUB-STEP: When I enter "valid_value" in "email" field
+Substep info: Traceback (most recent call last):
+  File "c:\users\rowel\selenium\acme\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\interaction.py", line 14, in step_impl
+    field_element = page.input_field(field_name)
+  File "c:\users\rowel\selenium\acme\Tests\acceptance\page\base_page.py", line 45, in input_field
+    return self.driver.find_element(By.NAME, field_name)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="email"]"}
+  (Session info: chrome=79.0.3945.117)
+
+
+Traceback (of failed substep):
+  File "c:\users\rowel\selenium\acme\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\interaction.py", line 14, in step_impl
+    field_element = page.input_field(field_name)
+  File "c:\users\rowel\selenium\acme\Tests\acceptance\page\base_page.py", line 45, in input_field
+    return self.driver.find_element(By.NAME, field_name)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\rowel\selenium\acme\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Checks is clicked
+    Given I am on the Main Page ... failed in 26.322s
+    When I click "Checks" button ... skipped in 0.000s
+    Then "Search for Check" is available from the dropdown menu ... skipped in 0.000s
+    And "Submit Check Copy" is available from the dropdown menu ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Vendors is clicked" status="passed" time="18.735411"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Vendors is clicked
+    Given I am on the Main Page ... passed in 16.947s
+    When I click "Vendors" button ... passed in 0.530s
+    Then "Search for Vendor" is available from the dropdown menu ... passed in 0.842s
+    And "Add Vendor" is available from the dropdown menu ... passed in 0.417s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Invoices is clicked" status="passed" time="18.117426"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Invoices is clicked
+    Given I am on the Main Page ... passed in 15.955s
+    When I click "Invoices" button ... passed in 0.450s
+    Then "Search for Invoice" is available from the dropdown menu ... passed in 0.734s
+    And "Add Invoice Details" is available from the dropdown menu ... passed in 0.432s
+    And "Delete Invoice" is available from the dropdown menu ... passed in 0.547s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Internal Invoices is clicked" status="passed" time="38.323269"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Internal Invoices is clicked
+    Given I am on the Main Page ... passed in 36.752s
+    When I click "Internal Invoices" button ... passed in 0.443s
+    Then "Download Monthly Invoices" is available from the dropdown menu ... passed in 0.709s
+    And "Download Full Invoice Report" is available from the dropdown menu ... passed in 0.419s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.main.contents.Test Contents of the Main Page" name="Dropdown menu displayed when Internal Reports is clicked" status="passed" time="19.612039"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Dropdown menu displayed when Internal Reports is clicked
+    Given I am on the Main Page ... passed in 17.782s
+    When I click "Reports" button ... passed in 0.560s
+    Then "Download Monthly Report" is available from the dropdown menu ... passed in 0.827s
+    And "Upload Yearly Report" is available from the dropdown menu ... passed in 0.443s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
